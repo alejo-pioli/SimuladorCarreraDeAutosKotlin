@@ -8,7 +8,17 @@ class PistaPersonalizada (
     }
 
     override fun aplicarCondiciones(vehiculo: Vehiculo) {
-        TODO("Not yet implemented")
+        when (clima) {
+            "soleado" -> {
+                vehiculo.combustible = (vehiculo.combustible * 0.95).toInt()
+            }
+            "lluvia" -> {
+                vehiculo.velocidadActual = (vehiculo.velocidadActual * 0.5).toInt()
+            }
+            "niebla" -> {
+                vehiculo.velocidadActual = (vehiculo.velocidadActual * 0.2).toInt()
+            }
+        }
     }
 
     override fun aplicarEventoAleatorio(vehiculo: Vehiculo) {
