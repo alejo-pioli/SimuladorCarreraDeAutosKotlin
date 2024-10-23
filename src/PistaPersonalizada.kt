@@ -4,7 +4,11 @@ class PistaPersonalizada (
 ) : Pista(longitud, clima)
 {
     override fun cambiarClima() {
-        TODO("Not yet implemented")
+
+        val lista = arrayListOf("Llovizna", "Soleado", "Niebla","Normal")
+
+        clima = lista.random()
+
     }
 
     override fun aplicarCondiciones(vehiculo: Vehiculo) {
