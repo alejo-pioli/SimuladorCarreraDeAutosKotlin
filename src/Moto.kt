@@ -4,5 +4,7 @@ class Moto (
     combustible: Int = 60,
     aceleracion: Int = 20,
     frenado: Int = 15
-) : `Vehiculo Custom`(nombre, velocidadMaxima, combustible, aceleracion, frenado)
-{}
+) : `Vehiculo Custom` (nombre, velocidadMaxima, combustible, aceleracion, frenado)
+{
+
+}

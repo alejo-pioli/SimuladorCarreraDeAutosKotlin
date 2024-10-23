@@ -4,4 +4,7 @@ class Camion (
     combustible: Int = 150,
     aceleracion: Int = 5,
     frenado: Int = 8
-):`Vehiculo Custom`(nombre, velocidadMaxima, combustible, aceleracion, frenado)
+) : `Vehiculo Custom` (nombre, velocidadMaxima, combustible, aceleracion, frenado)
+{
+
+}
