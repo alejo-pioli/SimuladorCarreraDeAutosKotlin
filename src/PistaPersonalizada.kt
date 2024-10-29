@@ -8,7 +8,6 @@ class PistaPersonalizada (
         val lista = arrayListOf("Llovizna", "Soleado", "Niebla","Normal")
 
         clima = lista.random()
-
     }
 
     override fun aplicarCondiciones(vehiculo: Vehiculo) {
