@@ -1,8 +1,12 @@
 fun main() {
     val pista = PistaPersonalizada(100, "soleado")
-    //TODO instanciar Pista Custom
-    //TODO Instanciar los distintos vehiculos
-    val vehiculos: List<Vehiculo> = listOf()
+
+    val moto = Moto("moto")
+    val autoDeportivo = AutoDeportivo("auto")
+    val camion = Camion("camion")
+
+    val vehiculos: List<Vehiculo> = listOf(moto, autoDeportivo, camion)
+
 
     var ganador: Vehiculo? = null
     var turnos = 0
@@ -19,7 +23,10 @@ fun main() {
 
         // Simulación de la carrera
         vehiculos.forEach { vehiculo ->
-            //TODO: Completar metodos
+            vehiculo.acelerar()
+            pista.aplicarCondiciones(vehiculo)
+            pista.aplicarEventoAleatorio(vehiculo)
+            vehiculo.avanzar()
 
             if (vehiculo.distanciaRecorrida >= pista.longitud) {
                 ganador = vehiculo

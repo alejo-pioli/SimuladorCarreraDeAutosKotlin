@@ -25,6 +25,18 @@ class PistaPersonalizada (
     }
 
     override fun aplicarEventoAleatorio(vehiculo: Vehiculo) {
-        TODO("Not yet implemented")
+        val lista = arrayListOf("pinchazo", "fallo", "encontrar")
+
+        when (lista.random()) {
+            "pinchazo" -> {
+                vehiculo.frenar()
+            }
+            "fallo" -> {
+                vehiculo.velocidadActual = 0
+            }
+            "encontrar" -> {
+                vehiculo.combustible = (vehiculo.combustible * 1.2).toInt()
+            }
+        }
     }
 }
