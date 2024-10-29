@@ -1,4 +1,6 @@
 fun main() {
+    //Integrantes: Bovero, Lorenzatti, Odetti, Pesce, Pioli
+
     val pista = PistaPersonalizada(100, "soleado")
 
     val moto = Moto("moto")
